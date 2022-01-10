@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@1&family=Oswald:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'noto sans siddham', noto sans siddham;
+  font-size: 1rem;
+  
+  background-image: url("heyo.png");
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgb(153, 81, 143);
+  border-radius: 5px;
+  background: rgb(185, 149, 214);
+}
+
+button:hover{
+  background-color: rgba(10, 5, 5, 0.1);
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+header{background-color: #ECD0DB;}
+
+#header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+  background: #E7E4ED;
+}
+
+#header button{
+  font-family: noto sans siddham;
+  border: 1px solid #E9B2CF;
+}
+
+#create_card{
+  display: none;
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: #e6e6faa8	;
+  box-shadow: 0px 2px 4px 0px rgba(165, 90, 140, 0.9);
+}
+
+#create_card h2{
+  color: rgb(3, 3, 3);
+  text-align: center;
+}
+
+#create_card textarea{
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid rgb(189, 150, 150);
+}
+
+#create_card button{width: fit-content;}
+
+#flashcards{
+  color:rgb(11, 13, 14);
+  display: flex;
+  justify-content:center;
+  align-items:end;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 10px;
+}
+
+.flashcard{
+  width: 350px;
+  opacity: 30px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px; 
+  background:#f0d1ff;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(220, 95, 224, 0.9);
+}
+
+.flashcard h2{font-size: 1.5rem;}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .flashcard{margin: auto;}
+
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:480px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create_card{width: 95%;}
+
+  .flashcard{width: 100%;}
+
+}
